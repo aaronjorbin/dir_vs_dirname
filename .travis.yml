@@ -6,8 +6,8 @@ php:
 - 7.1
 - 7.2
 - 7.3
-- 7.4
+- 7.4snapshot
 env:
 - TESTSCRIPT='script/dir/run.php'
 - TESTSCRIPT='script/dirname/run.php'
-script: time php $TESTSCRIPT
+script: /usr/bin/time php $TESTSCRIPT
