@@ -1,7 +1,7 @@
 <?php
 
 $files = range( 1, 100000 );
-$run_file = [ '<?php', 'echo "Starting";' ];
+$run_file = [ '<?php', 'echo "Starting";', 'echo PHP_EOL;' ];
 
 foreach( $files as $file ){
 	$dir = '<?php return __DIR__;';
@@ -13,5 +13,6 @@ foreach( $files as $file ){
 
 
 $run_file[] = 'echo "done";';
+$run_file[] = 'echo PHP_EOL; ';
 file_put_contents( './script/dir/run.php', implode( $run_file, "\n" ) ) ; 
 file_put_contents( './script/dirname/run.php', implode( $run_file, "\n" ) ) ; 

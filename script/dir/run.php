@@ -1,5 +1,6 @@
 <?php
 echo "Starting";
+echo PHP_EOL;
 require( "1.php" );
 require( "2.php" );
 require( "3.php" );
@@ -100001,3 +100002,4 @@ require( "99998.php" );
 require( "99999.php" );
 require( "100000.php" );
 echo "done";
+echo PHP_EOL; 
