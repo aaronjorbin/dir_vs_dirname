@@ -10,4 +10,6 @@ php:
 env:
 - TESTSCRIPT='script/dir/run.php'
 - TESTSCRIPT='script/dirname/run.php'
-script: ./run.sh 
+- TESTSCRIPT='script/directories/dir/run.php'
+- TESTSCRIPT='script/directories/dirname/run.php'
+script: php generate.php && ./run.sh 
