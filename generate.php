@@ -12,7 +12,7 @@ foreach( $files as $file ){
 	$dirname = '<?php return dirname( __FILE__ );';
 	file_put_contents( './script/dir/' . $file . '.php', $dir ); 
 	file_put_contents( './script/dirname/' . $file . '.php', $dirname ); 
-	mkdir mkdir( './script/directories/dir/' . $file );
+	mkdir( './script/directories/dir/' . $file );
         mkdir( './script/directories/dirname/' . $file );
 	file_put_contents( './script/directories/dir/' . $file . '/file.php', $dir );
 	file_put_contents( './script/directories/dir/name' . $file . '/file.php', $dirname );
