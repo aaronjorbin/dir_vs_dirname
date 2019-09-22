@@ -13,9 +13,9 @@ foreach( $files as $file ){
 	file_put_contents( './script/dir/' . $file . '.php', $dir ); 
 	file_put_contents( './script/dirname/' . $file . '.php', $dirname ); 
 	mkdir( './script/directories/dir/' . $file );
-        mkdir( './script/directories/dirname/' . $file );
+	mkdir( './script/directories/dirname/' . $file );
 	file_put_contents( './script/directories/dir/' . $file . '/file.php', $dir );
-	file_put_contents( './script/directories/dir/name' . $file . '/file.php', $dirname );
+	file_put_contents( './script/directories/dirname/' . $file . '/file.php', $dirname );
 	$run_dirs[] = 'require( "' . $file . '/file.php" );';
 	$run_file[] = 'require( "' . $file . '.php" );';
 }
